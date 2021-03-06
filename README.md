@@ -1,20 +1,19 @@
 # job4j
-Проект содержит решения блока "Базовый синтаксис" курса Job4j.
-package ru.job4j.converter;
+package ru.job4j.calculator;
 
-public class Converter {
+public class Fit {
 
-    public static int rubleToEuro (int value) {
-                return value / 70;
-        }
-
-        public static int rubleToDollar (int value) {
-                return value / 60;
-        }
-        public static void main(String[] args) {
-        int euro = Converter.rubleToEuro(280);
-        int dollar = Converter.rubleToDollar (120);
-        System.out.println("280 rubles " + euro + " euro");
-        System.out.println("120 rubles " + dollar +" dollar");
-        }
+    public static double manWeight(short height) {
+                return (height - 100) * 1.15;
+            }
+            public static double womanWeight(short height) {
+return (height - 110) * 1.15;
+}
+public static void main (String[] args) {
+short height = 178;
+double man = Fit.manWeight(height);
+double woman = Fit.womanWeight(height);
+System.out.println("Man 178 is " + man);
+System.out.println("Woman 178 is " + woman);
+}
 }
