@@ -18,7 +18,7 @@ public class PointTest {
 
     @Test
     public void when10to20then1() {
-        int expexted1 = 3;
+        int expexted1 = 1;
         int x3 = 1;
         int y3 = 0;
         int x4 = 2;
