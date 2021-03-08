@@ -51,4 +51,16 @@ Assert.assertEquals(expeced2, rsl2);
         int rsl3 = X2.calc(a3, b3, c3, x3);
         Assert.assertEquals(expeced3, rsl3);
     }
+
+    @Test
+
+    public void whenA1B1C0X1() {
+        int a4 = 1;
+        int b4 = 1;
+        int c4 = 0;
+        int x4 = 1;
+        int expected4 = 2;
+        int rsl4 = X2.calc(a4, b4, c4, x4);
+        Assert.assertEquals(expected4, rsl4);
+    }
    }
