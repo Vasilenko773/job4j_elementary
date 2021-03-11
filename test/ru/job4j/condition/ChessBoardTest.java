@@ -14,7 +14,7 @@ public class ChessBoardTest {
 
    @Test
     public void wayIs7() {
-    int way = ChessBoard.way(7,0,0,7);
+    int way = ChessBoard.way(7, 0, 0, 7);
     assertThat(way, is(7));
     }
 
