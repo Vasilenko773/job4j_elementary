@@ -10,7 +10,7 @@ public class DivideBySixTest {
 
     @Test
     public void whenNumberDivdeBy6() {
-        String expected = "Исходное число делится на 6.";
+        String expected = "Исходное число делится на 6";
         assertThat(DivideBySix.checkNumber(24), is(expected));
         }
 
@@ -22,7 +22,7 @@ public class DivideBySixTest {
 
         @Test
     public void whenNumberNoDivideBy3AndEvrn() {
-        String expexted = "Исходное число не делится на 3, но является четным";
+        String expexted = "Исходное число не делится на 3 но является четным";
         assertThat(DivideBySix.checkNumber(14), is(expexted));
         }
 
