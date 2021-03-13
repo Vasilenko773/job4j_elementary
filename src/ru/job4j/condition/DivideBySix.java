@@ -24,15 +24,3 @@ public class DivideBySix {
         System.out.println(a);
         }
    }
-   // String rsl = "";
-      //  if (number % 3 == 0 && number % 2 == 0) {
-          //      rsl = ("Исходное число делится на 6."); // System.out.println
-          //      } else if (number % 3 != 0 && number % 2 != 0) {
-          //      rsl = ("Исходное число не делится на 3 и не является четным"); // System.out.println
-           //     } else if (number % 3 == 0 && number % 2 != 0) {
-           //     rsl = ("Исходное число делится на 3, но не является четным"); //System.out.println
-            //    } else if (number % 3 != 0 && number % 2 == 0) {
-           //     rsl = ("Исходное число не делится на 3, но является четным"); //System.out.println
-            //    }
-           //     return rsl;
-           //     }
