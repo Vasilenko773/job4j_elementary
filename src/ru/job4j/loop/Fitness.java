@@ -12,13 +12,3 @@ int month = 0;
     }
 }
 
-
-// if (ivan *= 3 > nik *= 2) {
-//         System.out.println("Иван обогнал Николая");
- //        } else {
- //        System.out.println("Иван не обогнал Николая");
-   //      }
-     //    month += 1;
-    //     }
-    //     return month;
-    //     }
