@@ -4,12 +4,12 @@ public class Slash {
     public static void draw(int size) {
      for (int row = 0; row < size; row++) {
          for (int cell = 0; cell < size; cell++) {
-             boolean left = (row + cell) % 2 == 0;
-            // boolean right  = true; // дописать райт используя роу, цел, сайз
+             boolean left = row == cell;
+             boolean right = (size - (row + cell)) == 1;
              if (left) {
                  System.out.print("0");
-           //  } else if (right) {
-            //     System.out.print("0");
+             } else if (right) {
+              System.out.print("0");
              } else {
                  System.out.print(" ");
              }
