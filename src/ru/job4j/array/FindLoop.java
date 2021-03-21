@@ -14,9 +14,10 @@ package ru.job4j.array;
 
    public static int indexOf(int[] data, int el, int start, int finish) {
       int rsl = -1;
-      for (int j = start; j < finish; j++) {
+      for (int j = start; j <= finish; j++) {
           if (data[j] == el) {
               rsl = j;
+              break;
           }
       }
       return rsl;

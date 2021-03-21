@@ -69,5 +69,14 @@ public class FindLoopTest {
         int expected = -1;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenArrayHasLength2Then0() {
+        int[] data = new int[]{0, 1, 2, 4, 7, 5};
+        int el = 5;
+        int result = FindLoop.indexOf(data, el);
+        int expected = 5;
+        Assert.assertEquals(expected, result);
+    }
 }
 
