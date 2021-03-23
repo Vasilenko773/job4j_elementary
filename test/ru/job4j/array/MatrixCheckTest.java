@@ -63,8 +63,8 @@ public class MatrixCheckTest {
         char[] expected = {'X', 'X', 'X'};
         Assert.assertArrayEquals(expected, result);
     }
-}
-   /* // начало тестов
+
+    // начало тестов
     @Test
     public void whenDataMonoByTrueThenTrue() {
         char[][] input = {
@@ -103,4 +103,4 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         Assert.assertTrue(result);
     }
-}*/
+}
