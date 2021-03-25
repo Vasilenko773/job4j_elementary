@@ -5,8 +5,8 @@ public class Defragment {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
                 int point = i;
-                for (int j = 0; j < array.length; j++) {
-                    if (array[j] != null & j > i) {
+                for (int j = point + 1; j < array.length; j++) {
+                    if (array[j] != null) {
                         int first = j;
                         String rsl = array[point];
                         array[point] = array[first];
