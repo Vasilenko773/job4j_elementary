@@ -9,58 +9,12 @@ public class Machine {
         int size = 0;
         int sum = money - price;
         for (int i = 0; i < rsl.length; i++) {
-            if (sum == 0) {
-                break;
-            }
+
             while (sum - coins[i] >= 0) {
                 sum = sum - coins[i];
-                rsl[i] = coins[i];
-                size++;
+                rsl[size++] = coins[i];
             }
         }
         return Arrays.copyOf(rsl, size);
     }
 }
-              /* if (sum - coins[i] >= 0) {
-                   rsl[i] = coins[i];
-                   sum = sum - coins[i];
-                   size++;
-                   break; */
-
-               //    coins[i] = coins[0];
-                // rsl[i] = co[0]
-              //  sum = 0;
-              //  break;
-               // while (sum - coins[j] >= 0) {
-                //if (sum / coins[i] >= 0) {
-
-                  //  j++;}
-
-               /* if (sum / coins[0] >= 1) { // должен быьб один иф
-                    rsl[i] = coins[i];
-                    sum = sum - rsl[i];
-                    size++;
-                } else {
-                    break;
-                } else if (sum / coins[1] >= 1) {
-                    rsl[i] = 5;
-                    sum = sum - rsl[i];
-                    size++;
-                } else if (sum / coins[2] >= 1) {
-                    rsl[i] = 2;
-                    sum = sum - rsl[i];
-                    size++;
-                } else if (sum / coins[3] == 1) {
-                rsl[i] = 1;
-                    sum = sum - rsl[i];
-                    size++;
-               // } else {
-                 //   break; */
-        //return Arrays.copyOf(rsl, size);
-          //  }
-      //  return Arrays.copyOf(rsl, size);
-      //  }
-     //   return Arrays.copyOf(rsl, size);
-   // }
-//}
-
