@@ -6,19 +6,36 @@ public class Machine {
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
         int[] rsl = new int[100];
-        int j = 0;
         int size = 0;
         int sum = money - price;
-        while (sum > 0) {
-            size++;
+        for (int i = 0; i < rsl.length; i++) {
+            if (sum == 0) {
+                break;
+            }
+            while (sum - coins[i] >= 0) {
+                sum = sum - coins[i];
+                rsl[i] = coins[i];
+                size++;
+            }
+        }
+        return Arrays.copyOf(rsl, size);
+    }
+}
+              /* if (sum - coins[i] >= 0) {
+                   rsl[i] = coins[i];
+                   sum = sum - coins[i];
+                   size++;
+                   break; */
 
-            for (int i = 0; i < coins.length; i++) {
-                if (sum / coins[i] >= 1) {
-                    rsl[j] = coins[i];
-                    sum = sum - rsl[j];
-                    j++;
-                    break;
-                }
+               //    coins[i] = coins[0];
+                // rsl[i] = co[0]
+              //  sum = 0;
+              //  break;
+               // while (sum - coins[j] >= 0) {
+                //if (sum / coins[i] >= 0) {
+
+                  //  j++;}
+
                /* if (sum / coins[0] >= 1) { // должен быьб один иф
                     rsl[i] = coins[i];
                     sum = sum - rsl[i];
@@ -39,9 +56,11 @@ public class Machine {
                     size++;
                // } else {
                  //   break; */
-            }
-        }
-        return Arrays.copyOf(rsl, size);
-    }
-}
+        //return Arrays.copyOf(rsl, size);
+          //  }
+      //  return Arrays.copyOf(rsl, size);
+      //  }
+     //   return Arrays.copyOf(rsl, size);
+   // }
+//}
 
