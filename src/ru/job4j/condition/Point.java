@@ -12,7 +12,7 @@ public class Point {
     }
 
     public static void main(String[] agrg) {
-        double result = Point.distance(1,3,3,4);
+        double result = Point.distance(1, 3, 3, 4);
         System.out.println("result (0, 0) to (2, 0) " + result);
     }
 

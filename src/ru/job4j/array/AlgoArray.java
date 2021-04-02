@@ -12,7 +12,6 @@ public class AlgoArray {
         int tamp = array[1];
         array[1] = array[2];
         array[2] = tamp;
-
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
