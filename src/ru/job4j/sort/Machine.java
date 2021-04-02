@@ -8,7 +8,7 @@ public class Machine {
         int[] rsl = new int[100];
         int size = 0;
         int sum = money - price;
-        for (int i = 0; i < rsl.length; i++) {
+        for (int i = 0; i < coins.length; i++) {
 
             while (sum - coins[i] >= 0) {
                 sum = sum - coins[i];
